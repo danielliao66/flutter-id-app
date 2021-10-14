@@ -1,3 +1,3 @@
 # master_id
 
-This is a id app.
+This is a flutter id app.

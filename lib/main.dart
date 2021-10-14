@@ -10,9 +10,9 @@ class NinjaCard extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.grey[900],
       appBar: AppBar(
-        title: Text('Ninja ID Card'),
+        title: Text('Master ID Card'),
         centerTitle: true,
-        backgroundColor: Colors.grey[850],
+        backgroundColor: Colors.amber[600],
         elevation: 0.0,
       ),
       body: Padding(
@@ -22,24 +22,25 @@ class NinjaCard extends StatelessWidget {
           children: <Widget>[
             Center(
               child: CircleAvatar(
-                radius: 40.0,
+                radius: 100.0,
                 backgroundImage: AssetImage('assets/thumb.jpg'),
               ),
             ),
             Divider(
-              color: Colors.grey[800],
-              height: 60.0,
+              color: Colors.grey[600],
+              height: 40.0,
             ),
             Text(
               'NAME',
               style: TextStyle(
                 color: Colors.grey,
+                fontSize: 18.0,
                 letterSpacing: 2.0,
               ),
             ),
             SizedBox(height: 10.0),
             Text(
-              'Chun-Li',
+              'The Chosen One',
               style: TextStyle(
                 color: Colors.amberAccent[200],
                 fontWeight: FontWeight.bold,
@@ -52,12 +53,13 @@ class NinjaCard extends StatelessWidget {
               'HOMETOWN',
               style: TextStyle(
                 color: Colors.grey,
+                fontSize: 18.0,
                 letterSpacing: 2.0,
               ),
             ),
             SizedBox(height: 10.0),
             Text(
-              'Beijing, China',
+              'Memetown, Memeland',
               style: TextStyle(
                 color: Colors.amberAccent[200],
                 fontWeight: FontWeight.bold,
@@ -67,9 +69,10 @@ class NinjaCard extends StatelessWidget {
             ),
             SizedBox(height: 30.0),
             Text(
-              'CURRENT NINJA LEVEL',
+              'CURRENT MASTER LEVEL',
               style: TextStyle(
                 color: Colors.grey,
+                fontSize: 18.0,
                 letterSpacing: 2.0,
               ),
             ),
@@ -92,7 +95,7 @@ class NinjaCard extends StatelessWidget {
                 ),
                 SizedBox(width: 10.0),
                 Text(
-                  'chun.li@thenetninja.co.uk',
+                  'chosen1@themememaster.com',
                   style: TextStyle(
                     color: Colors.grey[400],
                     fontSize: 18.0,
