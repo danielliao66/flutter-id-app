@@ -1,10 +1,18 @@
 import 'package:flutter/material.dart';
 
 void main() => runApp(MaterialApp(
-  home: NinjaCard(),
+  home: MasterCard(),
 ));
 
-class NinjaCard extends StatelessWidget {
+class MasterCard extends StatefulWidget {
+  @override
+  State<MasterCard> createState() => _MasterCardState();
+}
+
+class _MasterCardState extends State<MasterCard> {
+
+  int masterlever = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -15,6 +23,15 @@ class NinjaCard extends StatelessWidget {
         backgroundColor: Colors.amber[600],
         elevation: 0.0,
       ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: (){
+          setState(() {
+            masterlever++;
+          });
+        },
+        child: Icon(Icons.add),
+        backgroundColor: Colors.amber[600],
+        ),
       body: Padding(
         padding: const EdgeInsets.fromLTRB(30.0, 40.0, 30.0, 0),
         child: Column(
@@ -78,7 +95,7 @@ class NinjaCard extends StatelessWidget {
             ),
             SizedBox(height: 10.0),
             Text(
-              '8',
+              '$masterlever',
               style: TextStyle(
                 color: Colors.amberAccent[200],
                 fontWeight: FontWeight.bold,
